@@ -1,0 +1,382 @@
+@charset 'utf-8';
+
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0p;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0px 2%;
+
+    .logo {
+        align-content: center;
+        height: 100%;
+    }
+
+    .nav {
+        height: 100%;
+        align-content: center;
+
+        .gnb {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gnb li a {
+            display: block;
+            text-align: center;
+            padding: 0px 10px;
+        }
+    }
+}
+
+
+#main {
+    .head_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        background-image: url(/img/mainbg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #2ba0ff;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title .head_title {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .title .head_title p {
+            font-size: 4em;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Lilita One";
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 50px;
+        width: 100%;
+        padding: 50px 0px;
+
+        .contents_title {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30%;
+        }
+
+        .contents_title .head_title p {
+            font-size: 2em;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Lilita One";
+        }
+
+        .contents_title .sub_title p {
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        .item_frame {
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .item_frame .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 calc((90% - 10px) / 4);
+            background-color: plum;
+            border-radius: 100%;
+
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 700px;
+
+        .left_banner {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 50%;
+            height: 100%;
+            background-image: url(/img/gridleftBg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 24px;
+
+            .l_b_head {
+                font-size: 50px;
+                font-family: "Lilita One";
+                font-weight: bold;
+            }
+
+            .text_list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-size: 14px;
+
+                li {
+                    list-style-type: circle;
+                }
+            }
+        }
+
+        .right_banner {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            color: #fff;
+
+            .r_b_top {
+                width: 100%;
+                height: 50%;
+                padding: 25px;
+                background-image: url(/img/gridrightBg_1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .r_b_top .r_b_top_head {
+                width: 50%;
+                font-size: 50px;
+                font-family: "Lilita One";
+                font-weight: bold;
+            }
+
+            .r_b_top a {
+                display: block;
+                width: 30%;
+                padding: 15px 0px;
+                text-align: center;
+                border: 1px solid #fff;
+            }
+
+            .r_b_bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                height: 50%;
+                padding: 25px;
+                background-image: url(/img/gridrightBg_2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: plum;
+            }
+
+            .r_b_bottom .r_b_bottom_head {
+                font-size: 50px;
+                font-family: "Lilita One";
+                font-weight: bold;
+            }
+
+            .r_b_bottom .font_aw {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    i {
+                        font-size: 3em;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+#footer {
+    background-color: #000;
+    padding: 30px 0px;
+    align-content: center;
+
+    .copyright {
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media (max-width:1024px) {
+    #header {
+        flex-direction: column;
+        gap: 20px;
+        background-color: rgb(255, 255, 255, 0.3);
+        height: auto;
+        padding: 10px 0px;
+
+        .logo {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav {
+            height: auto;
+            width: 100%;
+
+            .gnb {
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+
+    #main {
+        .content {
+            .contents_title {
+                width: 80%;
+            }
+
+            .item_frame {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .item_frame .item {
+                flex: 0 0 calc((90% - 10px) / 3);
+            }
+        }
+
+        .banner {
+            width: 100%;
+            height: 1000px;
+            flex-direction: column;
+            gap: 0px;
+
+            .left_banner {
+                width: 100%;
+                height: 60%;
+                padding-top: 5%;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-bottom: 20%;
+            }
+
+            .right_banner {
+                width: 100%;
+                height: 40%;
+                flex-direction: row;
+                gap: 0px;
+
+                .r_b_top {
+                    width: 50%;
+                    height: 100%;
+                }
+
+                .r_b_top a {
+                    width: 50%;
+                }
+
+                .r_b_top .r_b_top_head {
+                    width: 100%;
+                    font-size: 2em;
+                    font-family: "Lilita One";
+                    font-weight: bold;
+                }
+
+                .r_b_bottom {
+                    width: 50%;
+                    height: 100%;
+
+                }
+
+                .r_b_bottom .r_b_bottom_head {
+                    font-size: 2em;
+                    font-family: "Lilita One";
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
