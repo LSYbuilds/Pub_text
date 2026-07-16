@@ -79,7 +79,7 @@ body {
         align-items: center;
         width: 100%;
         height: 600px;
-        background-image: url(/img/mainbg.png);
+        background-image: url(./img/mainbg.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -169,7 +169,7 @@ body {
             gap: 15px;
             width: 50%;
             height: 100%;
-            background-image: url(/img/gridleftBg.png);
+            background-image: url(./img/gridleftBg.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -204,7 +204,7 @@ body {
                 width: 100%;
                 height: 50%;
                 padding: 25px;
-                background-image: url(/img/gridrightBg_1.png);
+                background-image: url(./img/gridrightBg_1.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -232,7 +232,7 @@ body {
                 width: 100%;
                 height: 50%;
                 padding: 25px;
-                background-image: url(/img/gridrightBg_2.png);
+                background-image: url(./img/gridrightBg_2.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
