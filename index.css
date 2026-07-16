@@ -135,12 +135,12 @@ body {
         }
 
         .item_frame {
-            width: 1000px;
+            max-width: 1400px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 24px;
         }
 
         .item_frame .item {
@@ -148,7 +148,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex: 0 0 calc((90% - 10px) / 4);
+            flex: 1 0 calc((90% - 24px) / 4);
             background-color: plum;
             border-radius: 100%;
 
